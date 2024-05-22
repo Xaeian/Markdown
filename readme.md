@@ -12,7 +12,7 @@
 - Pliki tekstowe z prostym formatowaniem, co pozwala na integracje **systemu kontroli wersji GIT**, co przynosi szereg korzyści:
   - **Historia zmian** - umożliwia śledzenie, kto i kiedy dokonał zmian, co pozwala prześledzić historię dokumentu i zidentyfikować różnice między wersjami, ułatwiając zrozumienie zmian.
   - **Współpraca** - ułatwia pracę zespołową, umożliwiając wielu osobom równoczesną pracę nad dokumentem.
-  - **Autobackup**-  umożliwia przywrócenie poprzednich wersji, jeśli nowe zmiany są niepożądane.
+  - **Autobackup** -  umożliwia przywrócenie poprzednich wersji, jeśli nowe zmiany są niepożądane.
   - **Rozgałęzienia _(branching)_** - pozwala na jednoczesną pracę nad różnymi rozdziałami.
   - **Oznaczanie autorów** - pokazuje, kto dokonał konkretnych zmian, zwiększając przejrzystość.
 
