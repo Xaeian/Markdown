@@ -310,7 +310,7 @@ $$
 
     ```mermaid
       flowchart LR
-        A([🌅 Wstań]) --> B{Czy jest kawa?}
+        A([🌅 Wstań]) --> B{Jest kawa?}
         B -->|Tak| C[Wypij kawę]
         B -->|Nie| D[Kup kawę]
         D --> C
@@ -319,7 +319,7 @@ $$
 
 ```mermaid
 flowchart LR
-  A([🌅 Wstań]) --> B{Czy jest kawa?}
+  A([🌅 Wstań]) --> B{Jest kawa?}
   B -->|Tak| C[Wypij kawę]
   B -->|Nie| D[Kup kawę]
   D --> C
