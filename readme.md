@@ -29,7 +29,7 @@
   - **Bogate możliwości edycji** - oprócz formatowania tekstu, oferuje funkcje edycji obrazów, wykresów, tabel oraz innych elementów wizualnych, wszystko w jednym miejscu.
 - **Słownik języka** sprawdzający pisownię, co zmniejsza liczbę błędów.
 
-## Konwersja z Pandoc
+### Konwersja z Pandoc
 
 [**Pandoc**](https://pandoc.org/installing.html) to narzędzie konsolowe do konwersji między formatami dokumentów. Pozwala wygenerować z pliku `.md` gotowy `.docx` lub `.pdf` jedną komendą.
 
