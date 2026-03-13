@@ -23,8 +23,8 @@
 - **Zorientowany pod dokumenty papierowe**. Stanowi najlepsze rozwiązanie na przygotowanie dokumentów do druku.
 - Niski próg wejścia, będąc prostym i intuicyjnym narzędziem do tworzenia dokumentów.
 - Duża popularność, która sprawia, że więcej osób jest zdolne do edytowania tych dokumentów.
-- **Komentarze i recenzje** - wbudowany tryb śledzenia zmian i komentowania. Sprawdza się przy krótkich sesjach i jednorazowych przeglądach - przy długotrwałej współpracy wielu osób szybko robi się chaos.
-- **Szablony** - gotowe szablony dokumentów firmowych, umów i pism urzędowych - otwierasz i wypełniasz, zero konfiguracji.
+- **Komentarze i recenzje** - wbudowany tryb śledzenia zmian i komentowania. Sprawdza się przy krótkich sesjach i jednorazowych przeglądach, przy długotrwałej współpracy wielu osób szybko robi się chaos.
+- **Szablony** - gotowe szablony dokumentów firmowych, umów i pism urzędowych: otwierasz i wypełniasz, zero konfiguracji.
 - **Połączenie formy i treści** - widzisz dokładnie to co wydrukujesz _(WYSIWYG)_. Precyzyjna kontrola marginesów, podziałów stron, nagłówków i stopek bez żadnej składni.
   - **Bogate możliwości edycji** - oprócz formatowania tekstu, oferuje funkcje edycji obrazów, wykresów, tabel oraz innych elementów wizualnych, wszystko w jednym miejscu.
 - **Słownik języka** sprawdzający pisownię, co zmniejsza liczbę błędów.
@@ -366,13 +366,13 @@ Aby wyłączyć składnię Markdown i wyświetlić znak dosłownie, poprzedź go
 
 Markdown to skrót do HTML, każdy element składni ma swój odpowiednik:
 
-| Markdown          | HTML                          | Wynik          |
-| :---------------- | :---------------------------- | :------------- |
+| Markdown          | HTML                            | Wynik          |
+| :---------------- | :------------------------------ | :------------- |
 | `# Nagłówek`      | `<h1>`Nagłówek`</h1>`           | **duży tytuł** |
 | `**pogrubiony**`  | `<strong>`pogrubiony`</strong>` | **pogrubiony** |
 | `_pochylony_`     | `<em>`pochylony`</em>`          | _pochylony_    |
 | `[link](url)`     | `<a href="url">`link`</a>`      | [link](url)    |
-| `![img](img.png)` | `<img src="img.png" />`       | 🖼️              |
+| `![img](img.png)` | `<img src="img.png" />`         | 🖼️              |
 
 Format pośredni, Markdown korzysta z istniejącej technologii zamiast wynajdować koło na nowo. Każdy nowy renderer _(VSCode, GitHub, MkDocs, Pandoc)_ automatycznie obsługuje Twoje stare pliki `.md`.
 
