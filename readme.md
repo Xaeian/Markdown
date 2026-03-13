@@ -1,4 +1,4 @@
-## Markdown `.md`
+## Ⓜ️⬇ Markdown `.md` 
 
 **Markdown** jest technologią przeznaczonado tworzenia dokumentów tekstowych, czyli tak jak **MS Word**, jednak różnic między tymi narzędziami jest więcej niż podobieństw.
 
@@ -6,6 +6,8 @@
 
 - **Zorientowany pod internet**. Jest konwertowany na **HTML**, ale jest znacznie od niego prostszy i bardziej czytelny, co czyni go najłatwiejszym sposobem publikowania treści w internecie.
 - Pliki markdown są lekkie i nie wymagając specjalistycznego oprogramowania _(wystarczy jakikolwiek edytor tekstu)_
+- **Otwarty format** - plik `.md` to czysty, czytelny tekst. Żadnych binarnych śmieci, żadnej licencji, żadnego vendor lock-in. Otworzysz go w każdym edytorze, za 30 lat, na każdym systemie.
+- **Współpraca z AI** - czysty tekst to mniejszy kontekst dla modelu: taniej, szybciej, dokładniej. AI rozumie i generuje Markdown natywnie, dokumentacja, README, specyfikacje wylatują gotowe.
 - **Oddzielenie formy od treści**:
   - Wymuszenie jednolitego stylu dokumentów we wszystkich sekcjach organizacji jest praktykowane. Nawet podczas przenoszenia i integracji dokumentacji między różnymi firmami, zachowany zostaje spójny styl. Ten styl zależy od silnika odpowiedzialnego za prezentację, który jest zintegrowany z narzędziami do edycji, takimi jak VSCode, oraz platformami publikacyjnymi, takimi jak GitHub czy GitLab.
   - Pozwala to skoncentrować się na treści dla osób tworzących dokumenty, co może zminimalizować liczbę błędów i zwiększyć jakość dokumentów pod względem merytorycznym.
@@ -21,10 +23,24 @@
 - **Zorientowany pod dokumenty papierowe**. Stanowi najlepsze rozwiązanie na przygotowanie dokumentów do druku.
 - Niski próg wejścia, będąc prostym i intuicyjnym narzędziem do tworzenia dokumentów.
 - Duża popularność, która sprawia, że więcej osób jest zdolne do edytowania tych dokumentów.
-- **Połączenie formy i treści**
-  - **Precyzyjna kontrola** - umożliwia dostosowanie stylów czcionek, kolorów, rozmiarów i innych elementów wizualnych bez znajomości języka znaczników.
+- **Komentarze i recenzje** - wbudowany tryb śledzenia zmian i komentowania. Sprawdza się przy krótkich sesjach i jednorazowych przeglądach - przy długotrwałej współpracy wielu osób szybko robi się chaos.
+- **Szablony** - gotowe szablony dokumentów firmowych, umów i pism urzędowych - otwierasz i wypełniasz, zero konfiguracji.
+- **Połączenie formy i treści** - widzisz dokładnie to co wydrukujesz _(WYSIWYG)_. Precyzyjna kontrola marginesów, podziałów stron, nagłówków i stopek bez żadnej składni.
   - **Bogate możliwości edycji** - oprócz formatowania tekstu, oferuje funkcje edycji obrazów, wykresów, tabel oraz innych elementów wizualnych, wszystko w jednym miejscu.
 - **Słownik języka** sprawdzający pisownię, co zmniejsza liczbę błędów.
+
+## Konwersja z Pandoc
+
+[**Pandoc**](https://pandoc.org/installing.html) to narzędzie konsolowe do konwersji między formatami dokumentów. Pozwala wygenerować z pliku `.md` gotowy `.docx` lub `.pdf` jedną komendą.
+
+```sh
+# Konwersja do Word
+pandoc dokument.md -o dokument.docx
+# Konwersja do PDF (wymaga zainstalowanego LaTeX lub wkhtmltopdf)
+pandoc dokument.md -o dokument.pdf
+```
+
+Przydatne gdy chcesz oddać dokumentację jako `.docx` klientowi, który nie zna Markdown.
 
 # Syntax
 
@@ -117,27 +133,27 @@ Można tworzyć listy wielopoziomeowe oraz łączyć rodzaje list
 
 ```md
 1. Kurs programowania **Python**
-    - Konfiguracja środowiska
-    - Nauka podstaw
-        - Zmienne i podstawowe operacje
-        - Instrukcje warunkowe `if`...`else`
-        - Pętle `while` oraz `for`
-    - Projekt QUIZ'u z własnymi pytaniami
+  - Konfiguracja środowiska
+  - Nauka podstaw
+    - Zmienne i podstawowe operacje
+    - Instrukcje warunkowe `if`...`else`
+    - Pętle `while` oraz `for`
+  - Projekt QUIZ'u z własnymi pytaniami
 2. Szkolenia z dokumentów **Markdown**
-    1. Poznanie elementów składni
-    2. Stworzenie własnego bloga, kursu lub książki kulinarniej
+  1. Poznanie elementów składni
+  2. Stworzenie własnego bloga, kursu lub książki kulinarniej
 ```
 
 1. Kurs programowania **Python**
-    - Konfiguracja środowiska
-    - Nauka podstaw
-        - Zmienne i podstawowe operacje
-        - Instrukcje warunkowe `if`...`else`
-        - Pętle `while` oraz `for`
-    - Projekt QUIZ'u z własnymi pytaniami
+  - Konfiguracja środowiska
+  - Nauka podstaw
+    - Zmienne i podstawowe operacje
+    - Instrukcje warunkowe `if`...`else`
+    - Pętle `while` oraz `for`
+  - Projekt QUIZ'u z własnymi pytaniami
 2. Szkolenia z dokumentów **Markdown**
-    1. Poznanie elementów składni
-    2. Stworzenie własnego bloga, kursu lub książki kulinarniej
+  1. Poznanie elementów składni
+  2. Stworzenie własnego bloga, kursu lub książki kulinarniej
 
 ### Lista zadań
 
@@ -191,7 +207,7 @@ Aby przenieść się do innego dokumentu/pliku, należy stworzyć **hiperłącze
 [Link do nagłówka w tym pliku](#some-header)
 ```
 
-[Link do pliku lokalnego](./aux-file.md)
+[Link do pliku lokalnego](./xaeian.png)
 
 [Link do pliku w internecie](https://google.com)
 
@@ -212,7 +228,7 @@ Wstawianie zawartości z określonej ścieżki jest doskonałym sposobem na wyś
 ![Obraz z rozszerzeniem PNG](./path/to/image.png)
 ```
 
-![Logo Markdown](./logo-markdown.png)
+![Logo Xaeian](./xaeian.png)
 
 ### Tabele
 
@@ -262,6 +278,46 @@ d = b + int(a) # dodawanie int'ów
 print(d)
 ```
 
+## Wzory matematyczne
+
+Markdown obsługuje wzory matematyczne w notacji **LaTeX**. Wzory inline umieszczamy między `$...$`, blokowe między `$$...$$`. Obsługują je GitHub, Obsidian, Jupyter Notebook.
+
+```md
+Wzór inline: $E = mc^2$, pierwiastek: $\sqrt{a^2 + b^2}$
+
+$$
+\sum_{i=1}^{n} x_i = x_1 + x_2 + \cdots + x_n
+$$
+```
+
+Wzór inline: $E = mc^2$, pierwiastek: $\sqrt{a^2 + b^2}$
+
+$$
+\sum_{i=1}^{n} x_i = x_1 + x_2 + \cdots + x_n
+$$
+
+## Diagramy
+
+**Mermaid** to składnia do tworzenia diagramów bezpośrednio w Markdown, `flowchart`'y, `sequenceDiagram`'y, `gantt` i inne. Obsługują ją GitHub, GitLab i Obsidian.
+
+    ```mermaid
+      flowchart LR
+        A([🌅 Wstań]) --> B{Czy jest kawa?}
+        B -->|Tak| C[Wypij kawę]
+        B -->|Nie| D[Kup kawę]
+        D --> C
+        C --> E([💻 Koduj])
+    ```
+
+```mermaid
+flowchart LR
+  A([🌅 Wstań]) --> B{Czy jest kawa?}
+  B -->|Tak| C[Wypij kawę]
+  B -->|Nie| D[Kup kawę]
+  D --> C
+  C --> E([💻 Koduj])
+```
+
 ## Emoji
 
 Emotikony możemy kopiwać _(np. [stąd](https://pl.piliapp.com/emoji/list/))_ i umieszczać bezpośrednio w dokumencie, jak również możemy stosować ich kody.
@@ -271,6 +327,54 @@ Emotikony możemy kopiwać _(np. [stąd](https://pl.piliapp.com/emoji/list/))_ i
 ```
 
 👍 + :heart:
+
+## Callouts
+
+Wyróżnione bloki do przykucia uwagi czytelnika. Ostrzeżenia i ważne informacje których nie można przeoczyć.
+
+```md
+> [!NOTE]
+> `README.md` wyświetla się automatycznie jako strona repozytorium.
+
+> [!WARNING]
+> Nie commituj haseł i kluczy API do repozytorium.
+```
+
+> [!NOTE]
+> `README.md` wyświetla się automatycznie jako strona repozytorium.
+
+> [!WARNING]
+> Nie commituj haseł i kluczy API do repozytorium.
+
+## Escaping
+
+Aby wyłączyć składnię Markdown i wyświetlić znak dosłownie, poprzedź go ukośnikiem `\`.
+
+```md
+\*ten tekst nie będzie kursywą\*
+\# to nie jest nagłówek
+\`to nie jest kod\`
+```
+
+\*ten tekst nie będzie kursywą\*
+
+\# to nie jest nagłówek
+
+\`to nie jest kod\`
+
+## Markdown a HTML
+
+Markdown to skrót do HTML, każdy element składni ma swój odpowiednik:
+
+| Markdown          | HTML                          | Wynik          |
+| :---------------- | :---------------------------- | :------------- |
+| `# Nagłówek`      | `<h1>Nagłówek</h1>`           | **duży tytuł** |
+| `**pogrubiony**`  | `<strong>pogrubiony</strong>` | **pogrubiony** |
+| `_pochylony_`     | `<em>pochylony</em>`          | _pochylony_    |
+| `[link](url)`     | `<a href="url">link</a>`      | [link](url)    |
+| `![img](img.png)` | `<img src="img.png" />`       | 🖼️              |
+
+Format pośredni, Markdown korzysta z istniejącej technologii zamiast wynajdować koło na nowo. Każdy nowy renderer _(VSCode, GitHub, MkDocs, Pandoc)_ automatycznie obsługuje Twoje stare pliki `.md`.
 
 # Projekt
 
@@ -289,8 +393,3 @@ Minimalne wymagania projektowe:
 - [ ] Projekt w całości musi zawierać przynajmniej **dwie listy** wypunktowane/numerowane 
 - [ ] Projekt musi zawierać przynajmniej **jedną tabelę**.
 - [ ] Projekt musi zawierać przynajmniej **jeden link** zewnętrzny.
-
-# TODO
-
-- [ ] Wzory matematyczne **LATEX**
-- [ ] Diagramy **Mermaid**
