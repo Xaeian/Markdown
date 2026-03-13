@@ -213,7 +213,7 @@ Aby przenieść się do innego dokumentu/pliku, należy stworzyć **hiperłącze
 
 [Link do nagłówka w tym pliku](#nagłówki)
 
-Jeżeli chcemy, aby zawartość dokumentu lub pliku znalazła się w tym dokumencie _(została do niego skopiowana)_, wystarczy przed linkiem wstawić znak `!`.
+Jeżeli chcemy, aby zawartość dokumentu lub pliku znalazła się w tym dokumencie _(została do niego skopiowana)_, wystarczy przed linkiem wstawić znak `!`
 
 ```
 ![Zawartość pliku lokalnego](./aux-file.md)
