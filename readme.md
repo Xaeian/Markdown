@@ -334,14 +334,14 @@ Wyróżnione bloki do przykucia uwagi czytelnika. Ostrzeżenia i ważne informac
 
 ```md
 > [!NOTE]
-> `README.md` wyświetla się automatycznie jako strona repozytorium.
+> `readme.md` wyświetla się automatycznie jako strona repozytorium.
 
 > [!WARNING]
 > Nie commituj haseł i kluczy API do repozytorium.
 ```
 
 > [!NOTE]
-> `README.md` wyświetla się automatycznie jako strona repozytorium.
+> `readme.md` wyświetla się automatycznie jako strona repozytorium.
 
 > [!WARNING]
 > Nie commituj haseł i kluczy API do repozytorium.
