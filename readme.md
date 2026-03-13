@@ -286,6 +286,9 @@ Emotikony możemy kopiwać _(np. [stąd](https://emojidb.org/))_ i umieszczać b
 👍 + :heart:
 ```
 
+👍 + :heart:
+
+
 ## Wzory matematyczne
 
 Markdown obsługuje wzory matematyczne w notacji **LaTeX**. Wzory inline umieszczamy między `$...$`, blokowe między `$$...$$`. Obsługują je GitHub, Obsidian, Jupyter Notebook.
@@ -320,13 +323,11 @@ $$
 ```mermaid
 flowchart LR
   A([🌅 Wstań]) --> B{Jest kawa?}
-  B -->|Tak| C[Wypij kawę]
-  B -->|Nie| D[Kup kawę]
+  B -->|Tak| C[Wypij]
+  B -->|Nie| D[Kup]
   D --> C
   C --> E([💻 Koduj])
 ```
-
-👍 + :heart:
 
 ## Callouts
 
