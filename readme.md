@@ -278,6 +278,14 @@ d = b + int(a) # dodawanie int'ów
 print(d)
 ```
 
+## Emoji
+
+Emotikony możemy kopiwać _(np. [stąd](https://emojidb.org/))_ i umieszczać bezpośrednio w dokumencie, jak również możemy stosować ich kody.
+
+```
+👍 + :heart:
+```
+
 ## Wzory matematyczne
 
 Markdown obsługuje wzory matematyczne w notacji **LaTeX**. Wzory inline umieszczamy między `$...$`, blokowe między `$$...$$`. Obsługują je GitHub, Obsidian, Jupyter Notebook.
@@ -316,14 +324,6 @@ flowchart LR
   B -->|Nie| D[Kup kawę]
   D --> C
   C --> E([💻 Koduj])
-```
-
-## Emoji
-
-Emotikony możemy kopiwać _(np. [stąd](https://pl.piliapp.com/emoji/list/))_ i umieszczać bezpośrednio w dokumencie, jak również możemy stosować ich kody.
-
-```
-👍 + :heart:
 ```
 
 👍 + :heart:
