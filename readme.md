@@ -368,10 +368,10 @@ Markdown to skrót do HTML, każdy element składni ma swój odpowiednik:
 
 | Markdown          | HTML                          | Wynik          |
 | :---------------- | :---------------------------- | :------------- |
-| `# Nagłówek`      | `<h1>Nagłówek</h1>`           | **duży tytuł** |
-| `**pogrubiony**`  | `<strong>pogrubiony</strong>` | **pogrubiony** |
-| `_pochylony_`     | `<em>pochylony</em>`          | _pochylony_    |
-| `[link](url)`     | `<a href="url">link</a>`      | [link](url)    |
+| `# Nagłówek`      | `<h1>`Nagłówek`</h1>`           | **duży tytuł** |
+| `**pogrubiony**`  | `<strong>`pogrubiony`</strong>` | **pogrubiony** |
+| `_pochylony_`     | `<em>`pochylony`</em>`          | _pochylony_    |
+| `[link](url)`     | `<a href="url">`link`</a>`      | [link](url)    |
 | `![img](img.png)` | `<img src="img.png" />`       | 🖼️              |
 
 Format pośredni, Markdown korzysta z istniejącej technologii zamiast wynajdować koło na nowo. Każdy nowy renderer _(VSCode, GitHub, MkDocs, Pandoc)_ automatycznie obsługuje Twoje stare pliki `.md`.
