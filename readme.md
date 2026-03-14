@@ -314,8 +314,8 @@ $$
     ```mermaid
       flowchart LR
         A([🌅 Wstań]) --> B{Jest kawa?}
-        B -->|Tak| C[Wypij kawę]
-        B -->|Nie| D[Kup kawę]
+        B -->|Tak| C[Wypij]
+        B -->|Nie| D[Kup]
         D --> C
         C --> E([💻 Koduj])
     ```
