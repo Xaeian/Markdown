@@ -260,14 +260,16 @@ Na początku Markdown został stworzony jako narzędzie do tworzenia dokumentacj
 
 #### Blok kodu w języku Python
 
-    ```py
-    a = "5"
-    b = 10
-    c = a + str(b) # łączenie str'ingów
-    print(c)
-    d = b + int(a) # dodawanie int'ów
-    print(d)
-    ```
+````md
+```py
+a = "5"
+b = 10
+c = a + str(b) # łączenie str'ingów
+print(c)
+d = b + int(a) # dodawanie int'ów
+print(d)
+```
+````
 
 ```py
 a = "5"
@@ -311,14 +313,16 @@ $$
 
 **Mermaid** to składnia do tworzenia diagramów bezpośrednio w Markdown, `flowchart`'y, `sequenceDiagram`'y, `gantt` i inne. Obsługują ją GitHub, GitLab i Obsidian.
 
-    ```mermaid
-      flowchart LR
-        A([🌅 Wstań]) --> B{Jest kawa?}
-        B -->|Tak| C[Wypij]
-        B -->|Nie| D[Kup]
-        D --> C
-        C --> E([💻 Koduj])
-    ```
+````md
+```mermaid
+flowchart LR
+  A([🌅 Wstań]) --> B{Jest kawa?}
+  B -->|Tak| C[Wypij]
+  B -->|Nie| D[Kup]
+  D --> C
+  C --> E([💻 Koduj])
+```
+````
 
 ```mermaid
 flowchart LR
