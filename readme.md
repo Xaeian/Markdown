@@ -29,10 +29,19 @@
   - **Bogate możliwości edycji** - oprócz formatowania tekstu, oferuje funkcje edycji obrazów, wykresów, tabel oraz innych elementów wizualnych, wszystko w jednym miejscu.
 - **Słownik języka** sprawdzający pisownię, co zmniejsza liczbę błędów.
 
-### Konwersja z Pandoc
+### Praca z Markdown
+
+#### Edycja
+
+Markdown najlepiej edytować w tym samym edytorze, w którym i tak już pracujesz: [**VSCode**](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Vim](https://www.vim.org/), [Notepad++](https://notepad-plus-plus.org/). Nie potrzebujesz osobnej aplikacji, wystarczy plugin do podglądu. Dla VSCode sprawdza się [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), który daje podgląd na żywo, skróty klawiszowe i automatyczne formatowanie list. Podgląd otworzysz skrótem `Ctrl+Shift+V` lub `Ctrl+K V` _(side-by-side)_.
+
+#### Podgląd i publikacja
+
+Na Windowsie bez edytora sprawdzi się [**mdview**](https://github.com/c3er/mdview/releases) jako lekka przeglądarka plików `.md`. Platformy [**GitHub**](https://github.com) i [GitLab](https://gitlab.com) automatycznie renderują pliki `.md`. Plik `readme.md` w katalogu repozytorium wyświetla się jako strona główna projektu, co czyni go najczęstszym sposobem publikowania dokumentacji, instrukcji, artykułów itd.
+
+#### Konwersja
 
 [**Pandoc**](https://pandoc.org/installing.html) to narzędzie konsolowe do konwersji między formatami dokumentów. Pozwala wygenerować z pliku `.md` gotowy `.docx` lub `.pdf` jedną komendą.
-
 ```sh
 # Konwersja do Word
 pandoc dokument.md -o dokument.docx
@@ -40,7 +49,7 @@ pandoc dokument.md -o dokument.docx
 pandoc dokument.md -o dokument.pdf
 ```
 
-Przydatne gdy chcesz oddać dokumentację jako `.docx` klientowi, który nie zna Markdown.
+Przydatne gdy trzeba oddać dokumentację jako `.docx` klientowi, który nie zna Markdown.
 
 # Syntax
 
