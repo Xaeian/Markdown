@@ -371,7 +371,7 @@ Wyróżnione bloki do przykucia uwagi czytelnika. Ostrzeżenia i ważne informac
 
 ## Metadane
 
-Na początku pliku `.md` można umieścić blok metadanych w formacie **YAML**, oddzielony liniami `---`. Same metadane nie są renderowane w treści, ale wykorzystują je narzędzia do generowania PDF, stron statycznych _(Jekyll, Hugo)_ czy szablonów dokumentów firmowych _(np. nagłówek, stopka, numer wersji)_.
+Na początku pliku `.md` można umieścić blok metadanych w formacie [**YAML**](https://yaml.org), oddzielony liniami `---`. Same metadane nie są renderowane w treści, ale wykorzystują je narzędzia do generowania PDF, stron statycznych _(Jekyll, Hugo)_ czy szablonów dokumentów firmowych _(np. nagłówek, stopka, numer wersji)_.
 
 ```md
 ---

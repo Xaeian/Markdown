@@ -366,7 +366,7 @@ Highlighted blocks to catch the reader's attention. Warnings and important infor
 
 ## Metadata
 
-At the start of an `.md` file you can place a metadata block in **YAML** format, separated by `---` lines. The metadata itself isn't rendered in the content, but it's used by tools for generating PDFs, static sites _(Jekyll, Hugo)_ or corporate document templates _(e.g. header, footer, version number)_.
+At the start of an `.md` file you can place a metadata block in [**YAML**](https://yaml.org) format, separated by `---` lines. The metadata itself isn't rendered in the content, but it's used by tools for generating PDFs, static sites _(Jekyll, Hugo)_ or corporate document templates _(e.g. header, footer, version number)_.
 
 ```md
 ---
