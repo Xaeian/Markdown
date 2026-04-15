@@ -1,3 +1,8 @@
+---
+title: Markdown Intro
+author: Xaeian Emilian Świtalski
+---
+
 ## Ⓜ️⬇ Markdown `.md` 
 
 **Markdown** is a technology for creating text documents, just like **MS Word**, but there are more differences than similarities between these tools.
