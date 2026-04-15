@@ -1,3 +1,8 @@
+---
+title: Markdown Intro
+author: Xaeian Emilian Świtalski
+---
+
 ## Ⓜ️⬇ Markdown `.md` 
 
 **Markdown** jest technologią przeznaczonado tworzenia dokumentów tekstowych, czyli tak jak **MS Word**, jednak różnic między tymi narzędziami jest więcej niż podobieństw.
@@ -48,6 +53,10 @@ pandoc dokument.md -o dokument.docx
 # Konwersja do PDF (wymaga zainstalowanego LaTeX lub wkhtmltopdf)
 pandoc dokument.md -o dokument.pdf
 ```
+
+#### All-in-One
+
+Jak ktoś koniecznie chce mieć wszystko w jednym narzędziu, polecam [Typora](https://typora.io). Jednorazowy koszt to niecałe ~`70zł`. A jak ktoś jest biedny, to zostaje [Marktext](https://github.com/marktext/marktext).
 
 Przydatne gdy trzeba oddać dokumentację jako `.docx` klientowi, który nie zna Markdown.
 
@@ -359,6 +368,21 @@ Wyróżnione bloki do przykucia uwagi czytelnika. Ostrzeżenia i ważne informac
 
 > [!WARNING]
 > Nie commituj haseł i kluczy API do repozytorium.
+
+## Metadane
+
+Na początku pliku `.md` można umieścić blok metadanych w formacie **YAML**, oddzielony liniami `---`. Same metadane nie są renderowane w treści, ale wykorzystują je narzędzia do generowania PDF, stron statycznych _(Jekyll, Hugo)_ czy szablonów dokumentów firmowych _(np. nagłówek, stopka, numer wersji)_.
+
+```md
+---
+title: Markdown Intro
+author: Xaeian Emilian Świtalski
+version: 1.4.2
+date: 2026-04-15
+---
+```
+
+Klucze są dowolne, zależą od silnika który czyta dokument. Typowe pola to `title`, `author`, `date`, `tags`, `version`. GitHub i VSCode renderują blok jako tabelkę nad treścią, Pandoc wstawi `title` i `author` na stronę tytułową przy konwersji do `.docx` lub `.pdf`.
 
 ## Escaping
 

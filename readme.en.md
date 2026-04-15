@@ -51,6 +51,10 @@ pandoc document.md -o document.pdf
 
 Useful when you need to hand off documentation as `.docx` to a client who doesn't know Markdown.
 
+#### All-in-One
+
+If someone really wants everything in one tool, I recommend [Typora](https://typora.io). One-time cost is just `$15`. And if someone's broke, there's always [Marktext](https://github.com/marktext/marktext).
+
 # Syntax
 
 Below you'll find Markdown **markers**, i.e. syntax elements, both more and less useful ones.
@@ -359,6 +363,21 @@ Highlighted blocks to catch the reader's attention. Warnings and important infor
 
 > [!WARNING]
 > Don't commit passwords and API keys to the repository.
+
+## Metadata
+
+At the start of an `.md` file you can place a metadata block in **YAML** format, separated by `---` lines. The metadata itself isn't rendered in the content, but it's used by tools for generating PDFs, static sites _(Jekyll, Hugo)_ or corporate document templates _(e.g. header, footer, version number)_.
+
+```md
+---
+title: Markdown Intro
+author: Xaeian Emilian Świtalski
+version: 1.4.2
+date: 2026-04-15
+---
+```
+
+Keys are arbitrary, they depend on the engine reading the document. Typical fields are `title`, `author`, `date`, `tags`, `version`. GitHub and VSCode render the block as a table above the content, Pandoc inserts `title` and `author` onto the title page when converting to `.docx` or `.pdf`.
 
 ## Escaping
 
