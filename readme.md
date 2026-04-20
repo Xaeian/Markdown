@@ -9,23 +9,25 @@ author: Xaeian Emilian Świtalski
 
 ### Zalety i specyfika Markdown:
 
-- **Zorientowany pod internet**. Jest konwertowany na **HTML**, ale jest znacznie od niego prostszy i bardziej czytelny, co czyni go najłatwiejszym sposobem publikowania treści w internecie.
-- Pliki markdown są lekkie i nie wymagając specjalistycznego oprogramowania _(wystarczy jakikolwiek edytor tekstu)_
-- **Otwarty format** - plik `.md` to czysty, czytelny tekst. Żadnych binarnych śmieci, żadnej licencji, żadnego vendor lock-in. Otworzysz go w każdym edytorze, za 30 lat, na każdym systemie.
-- **Współpraca z AI** - czysty tekst to mniejszy kontekst dla modelu: taniej, szybciej, dokładniej. AI rozumie i generuje Markdown natywnie, dokumentacja, README, specyfikacje wylatują gotowe.
+- **Zorientowany pod internet**. Konwertuje się na **HTML**, ale jest od niego prostszy i czytelniejszy. Najłatwiejszy sposób publikowania treści w sieci.
+- **Lekki i uniwersalny**. Zwykły plik tekstowy, otwierasz w dowolnym edytorze. Obsłużysz z terminala _(`grep`, `sed`)_, przetworzysz skryptem w Pythonie, wygenerujesz automatycznie z danych. Żadnego specjalistycznego softu.
+- **Otwarty format**. Plik `.md` to czysty, czytelny tekst. Żadnych binarnych śmieci, żadnej licencji, żadnego vendor lock-in. Otworzysz go w każdym edytorze, za 30 lat, na każdym systemie.
+- **Współpraca z AI**. Czysty tekst to mniejszy kontekst dla modelu: taniej, szybciej, dokładniej. AI rozumie i generuje Markdown natywnie. Dokumentacja, README, specyfikacje wylatują gotowe.
+- **Linkowanie zamiast kopiowania**. Łatwo budujesz sieć dokumentów, które odnoszą się do siebie nawzajem. Jeden fragment żyje w jednym miejscu i linkujesz do niego z dziesięciu innych.
 - **Oddzielenie formy od treści**:
-  - Wymuszenie jednolitego stylu dokumentów we wszystkich sekcjach organizacji jest praktykowane. Nawet podczas przenoszenia i integracji dokumentacji między różnymi firmami, zachowany zostaje spójny styl. Ten styl zależy od silnika odpowiedzialnego za prezentację, który jest zintegrowany z narzędziami do edycji, takimi jak VSCode, oraz platformami publikacyjnymi, takimi jak GitHub czy GitLab.
-  - Pozwala to skoncentrować się na treści dla osób tworzących dokumenty, co może zminimalizować liczbę błędów i zwiększyć jakość dokumentów pod względem merytorycznym.
-- Pliki tekstowe z prostym formatowaniem, co pozwala na integracje **systemu kontroli wersji GIT**, co przynosi szereg korzyści:
-  - **Historia zmian** - umożliwia śledzenie, kto i kiedy dokonał zmian, co pozwala prześledzić historię dokumentu i zidentyfikować różnice między wersjami, ułatwiając zrozumienie zmian.
-  - **Współpraca** - ułatwia pracę zespołową, umożliwiając wielu osobom równoczesną pracę nad dokumentem.
-  - **Autobackup** -  umożliwia przywrócenie poprzednich wersji, jeśli nowe zmiany są niepożądane.
-  - **Rozgałęzienia _(branching)_** - pozwala na jednoczesną pracę nad różnymi rozdziałami.
-  - **Oznaczanie autorów** - pokazuje, kto dokonał konkretnych zmian, zwiększając przejrzystość.
+  - Styl _(wygląd)_ dokumentu nie siedzi w pliku, tylko w silniku renderującym _(VSCode, GitHub, GitLab)_. Dzięki temu łatwo wymusić jednolity wygląd w całej organizacji, a dokumenty/artykuły przenoszone między firmami/czasopismami automatycznie dziedziczą styl nowego miejsca.
+  - Piszący skupia się na treści, a nie na formatowaniu. Mniej błędów, wyższa jakość merytoryczna. Bo zwykle ważna jest treść!
+  - W dużej firmie, nawet z gotowymi szablonami Worda, każdy i tak formatuje po swojemu. Po roku masz 50 wersji "firmowego" stylu. Markdown rozwiązuje to u źródła. Stylu nie da się zepsuć, bo go w dokumencie nie ma.
+- **GIT działa natywnie**. Skoro `.md` to zwykły tekst, system kontroli wersji obsługuje go tak samo jak kod źródłowy. Zyskujesz:
+  - **Historia zmian**. Widzisz kto i kiedy co zmienił, linijka po linijce _(`git blame`)_.
+  - **Współpraca**. Wiele osób pracuje równolegle, merge łączy zmiany automatycznie.
+  - **Autobackup**. Wrócisz do dowolnej wcześniejszej wersji.
+  - **Rozgałęzienia** _(branching)_. Jedna osoba pisze rozdział 1, druga rozdział 2, na końcu scalasz.
+  - **Tag / Release**. Snapshot całego zestawu powiązanych dokumentów w jednym punkcie czasu _(np. instrukcja produktu w wersji `v1.2.0`)_.
 
 ### Zalety i specyfika MS Office:
   
-- **Zorientowany pod dokumenty papierowe**. Stanowi najlepsze rozwiązanie na przygotowanie dokumentów do druku.
+- **Zorientowany pod dokumenty papierowe**. Stanowi najlepsze rozwiązanie na szybkie i elastyczne przygotowanie dokumentów do druku.
 - Niski próg wejścia, będąc prostym i intuicyjnym narzędziem do tworzenia dokumentów.
 - Duża popularność, która sprawia, że więcej osób jest zdolne do edytowania tych dokumentów.
 - **Komentarze i recenzje** - wbudowany tryb śledzenia zmian i komentowania. Sprawdza się przy krótkich sesjach i jednorazowych przeglądach, przy długotrwałej współpracy wielu osób szybko robi się chaos.

@@ -9,19 +9,21 @@ author: Xaeian Emilian Świtalski
 
 ### Advantages and specifics of Markdown:
 
-- **Web-oriented**. It converts to **HTML**, but is much simpler and more readable, making it the easiest way to publish content on the web.
-- Markdown files are lightweight and don't require specialized software _(any text editor will do)_
-- **Open format** - an `.md` file is plain, readable text. No binary junk, no license, no vendor lock-in. You can open it in any editor, in 30 years, on any system.
-- **AI collaboration** - plain text means smaller context for the model: cheaper, faster, more accurate. AI understands and generates Markdown natively, documentation, READMEs, specifications come out ready to go.
+- **Web-oriented**. It converts to **HTML**, but is simpler and more readable. The easiest way to publish content on the web.
+- **Lightweight and universal**. Plain text file, open it in any editor. Handle it from the terminal _(`grep`, `sed`)_, process it with a Python script, generate it automatically from data. No specialized software needed.
+- **Open format**. An `.md` file is plain, readable text. No binary junk, no license, no vendor lock-in. You can open it in any editor, in 30 years, on any system.
+- **AI collaboration**. Plain text means smaller context for the model: cheaper, faster, more accurate. AI understands and generates Markdown natively. Documentation, READMEs, specifications come out ready to go.
+- **Linking instead of copying**. You easily build a network of documents that reference each other. One fragment lives in one place and you link to it from ten others.
 - **Separation of form and content**:
-  - Enforcing a uniform document style across all sections of an organization is standard practice. Even when transferring and integrating documentation between different companies, consistent styling is maintained. The style depends on the rendering engine, which is integrated with editing tools like VSCode, and publishing platforms like GitHub or GitLab.
-  - This allows document authors to focus on content, which can minimize errors and improve document quality in terms of substance.
-- Plain text files with simple formatting, enabling integration with **GIT version control**, which brings a number of benefits:
-  - **Change history** - tracks who made changes and when, allowing you to trace a document's history and identify differences between versions.
-  - **Collaboration** - facilitates teamwork, enabling multiple people to work on a document simultaneously.
-  - **Autobackup** - allows restoring previous versions if new changes are unwanted.
-  - **Branching** - enables simultaneous work on different chapters.
-  - **Author attribution** - shows who made specific changes, increasing transparency.
+  - The document's style _(appearance)_ doesn't live in the file, but in the rendering engine _(VSCode, GitHub, GitLab)_. This makes it easy to enforce a uniform look across the whole organization, and documents/articles transferred between companies/journals automatically inherit the style of the new location.
+  - The author focuses on content, not formatting. Fewer errors, higher substantive quality. Because content is usually what matters!
+  - In a large company, even with ready-made Word templates, everyone formats their own way. After a year you have 50 versions of the "corporate" style. Markdown solves this at the source. You can't mess up the style, because it isn't in the document.
+- **GIT works natively**. Since `.md` is plain text, the version control system handles it the same way as source code. You get:
+  - **Change history**. You see who changed what and when, line by line _(`git blame`)_.
+  - **Collaboration**. Multiple people work in parallel, merge combines the changes automatically.
+  - **Autobackup**. Roll back to any previous version.
+  - **Branching**. One person writes chapter 1, another writes chapter 2, you merge it at the end.
+  - **Tag / Release**. A snapshot of the entire set of related documents at a single point in time _(e.g. product manual at version `v1.2.0`)_.
 
 ### Advantages and specifics of MS Office:
   
