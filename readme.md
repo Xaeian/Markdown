@@ -16,8 +16,8 @@ author: Xaeian Emilian Świtalski
 - **Linkowanie zamiast kopiowania**. Łatwo budujesz sieć dokumentów, które odnoszą się do siebie nawzajem. Jeden fragment żyje w jednym miejscu i linkujesz do niego z dziesięciu innych.
 - **Oddzielenie formy od treści**:
   - Styl _(wygląd)_ dokumentu nie siedzi w pliku, tylko w silniku renderującym _(VSCode, GitHub, GitLab)_. Dzięki temu łatwo wymusić jednolity wygląd w całej organizacji, a dokumenty/artykuły przenoszone między firmami/czasopismami automatycznie dziedziczą styl nowego miejsca.
+  - Stylu _(formatki)_ nie da się zepsuć, bo fizycznie nie ma go w dokumencie.
   - Piszący skupia się na treści, a nie na formatowaniu. Mniej błędów, wyższa jakość merytoryczna. Bo zwykle ważna jest treść!
-  - W dużej firmie, nawet z gotowymi szablonami Worda, każdy i tak formatuje po swojemu. Po roku masz 50 wersji "firmowego" stylu. Markdown rozwiązuje to u źródła. Stylu nie da się zepsuć, bo go w dokumencie nie ma.
 - **GIT działa natywnie**. Skoro `.md` to zwykły tekst, system kontroli wersji obsługuje go tak samo jak kod źródłowy. Zyskujesz:
   - **Historia zmian**. Widzisz kto i kiedy co zmienił, linijka po linijce _(`git blame`)_.
   - **Współpraca**. Wiele osób pracuje równolegle, merge łączy zmiany automatycznie.

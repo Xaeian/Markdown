@@ -16,8 +16,8 @@ author: Xaeian Emilian Świtalski
 - **Linking instead of copying**. You easily build a network of documents that reference each other. One fragment lives in one place and you link to it from ten others.
 - **Separation of form and content**:
   - The document's style _(appearance)_ doesn't live in the file, but in the rendering engine _(VSCode, GitHub, GitLab)_. This makes it easy to enforce a uniform look across the whole organization, and documents/articles transferred between companies/journals automatically inherit the style of the new location.
+  - The style _(template)_ can't be broken, because it physically isn't in the document.
   - The author focuses on content, not formatting. Fewer errors, higher substantive quality. Because content is usually what matters!
-  - In a large company, even with ready-made Word templates, everyone formats their own way. After a year you have 50 versions of the "corporate" style. Markdown solves this at the source. You can't mess up the style, because it isn't in the document.
 - **GIT works natively**. Since `.md` is plain text, the version control system handles it the same way as source code. You get:
   - **Change history**. You see who changed what and when, line by line _(`git blame`)_.
   - **Collaboration**. Multiple people work in parallel, merge combines the changes automatically.
