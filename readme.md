@@ -3,7 +3,7 @@ title: Markdown Intro
 author: Xaeian Emilian Świtalski
 ---
 
-## Ⓜ️⬇ Markdown `.md` 
+## Ⓜ️⬇ Markdown `.md`
 
 **Markdown** jest technologią przeznaczonado tworzenia dokumentów tekstowych, czyli tak jak **MS Word**, jednak różnic między tymi narzędziami jest więcej niż podobieństw.
 
